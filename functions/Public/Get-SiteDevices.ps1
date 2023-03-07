@@ -1,4 +1,4 @@
-function Get-DrmmSiteDevices {
+function Get-SiteDevices {
 
 	<#
 	.SYNOPSIS

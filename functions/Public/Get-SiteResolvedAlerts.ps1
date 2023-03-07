@@ -1,4 +1,4 @@
-function Get-DrmmSiteResolvedAlerts {
+function Get-SiteResolvedAlerts {
 
     <#
 	.SYNOPSIS

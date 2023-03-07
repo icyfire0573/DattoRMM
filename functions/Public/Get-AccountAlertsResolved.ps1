@@ -1,4 +1,4 @@
-﻿function Get-DrmmAccountAlertsResolved {
+﻿function Get-AccountAlertsResolved {
 
     <#
 	.SYNOPSIS

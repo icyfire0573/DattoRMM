@@ -1,4 +1,6 @@
-function Set-DrmmApiParameters {
+function Set-ApiParameters {
+	[CmdletBinding()]
+	[alias("New-Login")]
 	<#
 	.SYNOPSIS
 	Sets the API Parameters used throughout the module.
@@ -10,7 +12,8 @@ function Set-DrmmApiParameters {
 	Provide Dattto RMM API Key as user and Datto RMM API SecretKey as password. Obtained when creating a API user in Datto RMM.
 	#>
 
-	[CmdletBinding()]
+	
+
 	Param(
 	[Parameter(Position = 0, Mandatory=$True)]
 	[ValidateSet(
@@ -30,6 +33,6 @@ function Set-DrmmApiParameters {
 	New-Variable -Name apiUrl -Value $Url -Scope Script -Force
 	New-Variable -Name PublicPrivateKey -Value $PublicPrivateKey -Scope Script -Force
 	
-	$accessToken = New-ApiAccessToken
-	New-Variable -Name apiAccessToken -value $accessToken -Scope Script -Force
+	New-ApiAccessToken
+	
 }

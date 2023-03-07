@@ -1,4 +1,4 @@
-function Get-DrmmAccountVariables {
+function Get-AccountVariables {
 
     <#
 	.SYNOPSIS

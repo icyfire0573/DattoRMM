@@ -1,4 +1,4 @@
-function Get-DrmmSiteSettings {
+function Get-SiteSettings {
 
 	<#
 	.SYNOPSIS

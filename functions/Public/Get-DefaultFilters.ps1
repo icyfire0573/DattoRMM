@@ -1,4 +1,4 @@
-function Get-DrmmDefaultFilters {
+function Get-DefaultFilters {
 
 	<#
 	.SYNOPSIS

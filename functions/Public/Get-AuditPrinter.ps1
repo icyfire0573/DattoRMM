@@ -1,4 +1,4 @@
-function Get-DrmmAuditPrinter {
+function Get-AuditPrinter {
 
 	<#
 	.SYNOPSIS

@@ -1,4 +1,4 @@
-function Set-DrmmDeviceUdf {
+function Set-DeviceUdf {
 
 	<#
 	.SYNOPSIS

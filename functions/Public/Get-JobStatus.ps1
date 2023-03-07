@@ -1,4 +1,4 @@
-function Get-DrmmJobStatus {
+function Get-JobStatus {
 
 	<#
 	.SYNOPSIS

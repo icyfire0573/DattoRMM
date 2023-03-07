@@ -1,4 +1,4 @@
-function Add-DrmmAlertMessage {
+function Add-AlertMessage {
 
 	<#
 	.SYNOPSIS

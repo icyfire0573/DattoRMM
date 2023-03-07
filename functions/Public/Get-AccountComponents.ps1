@@ -1,4 +1,4 @@
-﻿function Get-DrmmAccountComponents {
+﻿function Get-AccountComponents {
 
 	<#
 	.SYNOPSIS

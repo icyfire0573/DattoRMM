@@ -1,4 +1,4 @@
-function Set-DrmmDeviceWarranty {
+function Set-DeviceWarranty {
 
 	<#
 	.SYNOPSIS

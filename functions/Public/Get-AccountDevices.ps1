@@ -1,4 +1,4 @@
-﻿function Get-DrmmAccountDevices {
+﻿function Get-AccountDevices {
 
 	<#
 	.SYNOPSIS

@@ -1,4 +1,4 @@
-function Move-DrmmDeviceToSite {
+function Move-DeviceToSite {
 
 	<#
 	.SYNOPSIS

@@ -1,4 +1,4 @@
-function Get-DrmmDevice {
+function Get-Device {
 
 	<#
 	.SYNOPSIS

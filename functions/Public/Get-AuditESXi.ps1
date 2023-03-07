@@ -1,4 +1,4 @@
-function Get-DrmmAuditESXi {
+function Get-AuditESXi {
 
 	<#
 	.SYNOPSIS

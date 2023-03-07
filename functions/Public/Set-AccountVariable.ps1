@@ -1,4 +1,4 @@
-function Set-DrmmAccountVariable {
+function Set-AccountVariable {
 
     <#
 	.SYNOPSIS

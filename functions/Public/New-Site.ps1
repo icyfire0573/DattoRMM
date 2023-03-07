@@ -1,4 +1,4 @@
-function New-DrmmSite {
+function New-Site {
 
 	<#
 	.SYNOPSIS

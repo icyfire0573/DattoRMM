@@ -1,4 +1,4 @@
-function Get-DrmmAccountSites {
+function Get-AccountSites {
 
     <#
 	.SYNOPSIS

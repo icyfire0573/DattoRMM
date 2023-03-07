@@ -1,4 +1,4 @@
-function Remove-DrmmSiteVariable {
+function Remove-SiteVariable {
 
     <#
 	.SYNOPSIS

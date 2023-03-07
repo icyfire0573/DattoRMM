@@ -1,4 +1,4 @@
-function Set-DrmmSiteVariable {
+function Set-SiteVariable {
 
     <#
 	.SYNOPSIS

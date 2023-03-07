@@ -1,4 +1,4 @@
-function Get-DrmmCustomFilters {
+function Get-CustomFilters {
 
 	<#
 	.SYNOPSIS

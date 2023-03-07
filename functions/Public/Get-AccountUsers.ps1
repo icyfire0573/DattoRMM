@@ -1,4 +1,4 @@
-﻿function Get-DrmmAccountUsers {
+﻿function Get-AccountUsers {
 
 	<#
 	.SYNOPSIS

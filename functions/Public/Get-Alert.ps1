@@ -1,4 +1,4 @@
-function Get-DrmmAlert {
+function Get-Alert {
 
 	<#
 	.SYNOPSIS

@@ -1,4 +1,4 @@
-function Get-DrmmDeviceOpenAlerts {
+function Get-DeviceOpenAlerts {
 
 	<#
 	.SYNOPSIS

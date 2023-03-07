@@ -1,4 +1,4 @@
-function Remove-DrmmAccountVariable {
+function Remove-AccountVariable {
 
     <#
 	.SYNOPSIS

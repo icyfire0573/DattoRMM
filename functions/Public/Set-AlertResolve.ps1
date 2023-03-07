@@ -1,4 +1,4 @@
-function Set-DrmmAlertResolve {
+function Set-AlertResolve {
 
 	<#
 	.SYNOPSIS

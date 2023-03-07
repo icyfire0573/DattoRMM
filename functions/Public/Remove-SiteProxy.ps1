@@ -1,4 +1,4 @@
-function Remove-DrmmSiteProxy {
+function Remove-SiteProxy {
 
 	<#
 	.SYNOPSIS

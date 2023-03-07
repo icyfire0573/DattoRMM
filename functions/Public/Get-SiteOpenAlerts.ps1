@@ -1,4 +1,4 @@
-function Get-DrmmSiteOpenAlerts {
+function Get-SiteOpenAlerts {
 
     <#
 	.SYNOPSIS

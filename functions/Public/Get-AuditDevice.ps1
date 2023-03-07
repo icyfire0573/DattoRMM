@@ -1,4 +1,4 @@
-function Get-DrmmAuditDevice {
+function Get-AuditDevice {
 
 	<#
 	.SYNOPSIS

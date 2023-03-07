@@ -1,4 +1,4 @@
-function Set-DrmmAlertUnmute {
+function Set-AlertUnmute {
 
 	<#
 	.SYNOPSIS

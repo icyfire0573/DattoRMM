@@ -1,4 +1,4 @@
-function Set-DrmmDeviceQuickJob {
+function Set-DeviceQuickJob {
 
 	<#
 	.SYNOPSIS
@@ -59,7 +59,7 @@ function Set-DrmmDeviceQuickJob {
 	$quickJobRequest = @{}
 
 	# Get Component Uid
-	ForEach ($Component in Get-DrmmAccountComponents)
+	ForEach ($Component in Get-AccountComponents)
 	{
 		if($Component.name -ieq $ComponentName)
 		{ 

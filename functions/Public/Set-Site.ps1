@@ -1,4 +1,4 @@
-function Set-DrmmSite {
+function Set-Site {
 
 	<#
 	.SYNOPSIS

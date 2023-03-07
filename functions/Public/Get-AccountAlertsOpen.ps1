@@ -1,4 +1,4 @@
-﻿function Get-DrmmAccountAlertsOpen {
+﻿function Get-AccountAlertsOpen {
 
     <#
 	.SYNOPSIS

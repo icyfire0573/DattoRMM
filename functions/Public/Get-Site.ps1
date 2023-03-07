@@ -1,4 +1,4 @@
-function Get-DrmmSite {
+function Get-Site {
 
 	<#
 	.SYNOPSIS
