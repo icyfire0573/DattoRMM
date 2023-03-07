@@ -18,8 +18,8 @@ Import-Module DattoRMM -Force
 # Provide API Parameters
 $params = @{
     Url        =  '<Datto RMM API Url>'
-    Key        =  '<Datto RMM API Key>'
-    SecretKey  =  '<Datto RMM API Secret Key>'
+    PublicPrivateKey        =  'Credential containing <Datto RMM API Key> as User and <Datto RMM API SecretKey> as password'
+    
 }
 
 # Set API Parameters
@@ -89,8 +89,8 @@ For the REST API properties goto https://merlot-api.centrastage.net/api/swagger-
 ## Version 1.0.0.10
 - Added Get-DrmmAuditDevice
 - Added Get-DrmmAuditDeviceSoftware
-- Updated New-ApiRequest - Added error handeling.
-- Updated New-ApiAccessToken - Added error handeling.
+- Updated New-ApiRequest - Added error handling.
+- Updated New-ApiAccessToken - Added error handling.
 - Updated New-ApiRequest - Removed global variables.
 - Updated New-ApiRequest - Added delay when 600 request/minute reached.
 - Updated Set-DrmmSiteProxy - Made host,port and type mandatory. 
