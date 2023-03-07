@@ -38,7 +38,7 @@ function New-ApiRequest {
 	)
 
 	# Check API Parameters
-	if (!$apiUrl -or !$publicPrivateKey) {
+	if (!$apiAccessToken) {
 		Write-Host "API Parameters missing, please run Set-DrmmApiParameters first!"
 		return
 	}
