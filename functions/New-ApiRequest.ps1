@@ -18,8 +18,7 @@ function New-ApiRequest {
 
     .INPUTS
 	$apiUrl = The API URL
-	$apiKey = The API Key
-	$apiKeySecret = The API Secret Key
+	$publicPrivateKey = The API Key and Secret Key
 
 	.OUTPUTS
 	API response
@@ -39,7 +38,7 @@ function New-ApiRequest {
 	)
 
 	# Check API Parameters
-	if (!$apiUrl -or !$apiKey -or !$apiSecretKey) {
+	if (!$apiUrl -or !$publicPrivateKey) {
 		Write-Host "API Parameters missing, please run Set-DrmmApiParameters first!"
 		return
 	}

@@ -9,8 +9,7 @@ function New-ApiAccessToken {
 
 	.INPUTS
 	$apiUrl = The API URL
-	$apiKey = The API Key
-	$apiKeySecret = The API Secret Key
+	$PublicPrivateKey = username is the API Key; password is the API Secret Key
 
 	.OUTPUTS
 	API Token
@@ -18,7 +17,7 @@ function New-ApiAccessToken {
 	#>
 
 	# Check API Parameters
-	if (!$apiUrl -or !$apiKey -or !$apiSecretKey) {
+	if (!$apiUrl -or !$PublicPrivateKey) {
 		Write-Host "API Parameters missing, please run Set-DrmmApiParameters first!"
 		return
 	}
@@ -36,7 +35,7 @@ function New-ApiAccessToken {
 		Uri         = '{0}/auth/oauth/token' -f $apiUrl
 		Method      = 'POST'
 		ContentType = 'application/x-www-form-urlencoded'
-		Body        = 'grant_type=password&username={0}&password={1}' -f $apiKey, $apiSecretKey
+		Body        = 'grant_type=password&username={0}&password={1}' -f $PublicPrivateKey.UserName, $PublicPrivateKey.GetNetworkCredential().password
 	}
 	
 	# Request access token
