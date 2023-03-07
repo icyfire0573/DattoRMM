@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="Datto Powershell Module" Language="1033" Version="1.0.0.24" Manufacturer="DattoRMM" UpgradeCode="5824ea72-79c7-4707-9c22-01e923d1ad35">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Platform="x64" />
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+    <Feature Id="ProductFeature" Title="Datto Powershell Module" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+  </Product>
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="WindowsPowerShell" Name="WindowsPowerShell">
+          <Directory Id="INSTALLDIR" Name="Modules">
+            <Directory Id="INSTALLFOLDER" Name="DattoRMM">
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <!-- <Component Id="ProductComponent"> -->
+      <!-- TODO: Insert files, registry keys, and other resources here. -->
+      <!-- </Component> -->
+      <Component Id="cmp91C75D53F7534045AA5C05613045AB80" Guid="A39F8D7D-6A99-4ED5-96C2-49608DD7BE16" Win64="yes">
+        <File Id="filA55D2F41E761425CAD60AADC1CE6AAB6" KeyPath="yes" Source="$(var.SolutionPath)\Build\DattoRMM\DattoRMM.psm1" />
+      </Component>
+      <Component Id="cmpBCC145E747C44B1A86A842498476F648" Guid="63C4323C-2342-4593-8148-359AB9BF2443" Win64="yes">
+        <File Id="filBD6A261807584773A98AD69671BEA19D" KeyPath="yes" Source="$(var.SolutionPath)\Build\DattoRMM\DattoRMM.psd1" />
+      </Component>
+      <!--<Component Id="cmp1E2DAEE2F1F148548382ACC9DF500693" Guid="DBC8B9D9-06C7-412C-9941-B93774D25CC5" Win64="yes">
+        <File Id="fil240F66CB44D5409BA93C024FFE78CF90" KeyPath="yes" Source="$(sys.CURRENTDIR)\Build\DattoRMM\DattoRMM.ps1" />
+      </Component>-->
+    </ComponentGroup>
+  </Fragment>
+</Wix>
